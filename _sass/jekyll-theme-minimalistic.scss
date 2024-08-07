@@ -12,17 +12,7 @@ body {
   font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--clr-text);
   font-weight: 400;
-  margin: 0; /* Ensure there's no default margin */
   -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.wrapper {
-  width: 100%; /* Use full width */
-  max-width: 100%; /* Remove max-width restrictions */
-  margin: 0 auto;
-  display: flex; /* Use flexbox to manage layout */
-  flex-direction: row; /* Arrange children horizontally */
-  align-items: flex-start; /* Align items at the start of container */
 }
 
 .header-title-mobile {
@@ -234,9 +224,7 @@ kbd {
 }
 
 .sidebar {
-  width: 100%; /* Use full width */
-  max-width: 100%; /* Remove max-width restrictions */
-  margin: 0 auto;
+  width: 250px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -248,7 +236,6 @@ kbd {
   height: calc(100vh - 108px);
   overflow-x: hidden;
   overflow-y: scroll;
-  align-items: flex-start; /* Align items at the start of container */
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
@@ -268,7 +255,7 @@ strong {
 }
 
 section {
-  flex-grow: 1; /* Allow section to fill remaining space */
+  width: 100%;
   float: right;
   padding-bottom:30px;
 }
@@ -302,16 +289,16 @@ hr {
 
 @media print, screen and (max-width: 960px) {
   .wrapper {
-    flex-direction: column;
+    width: 610px;
   }
 
   .sidebar {
-    width: 100%; /* Full width for smaller screens */
+    width: 200px;
     height: calc(100vh - 50px);  
   }
 
   section {
-    width: 100%;
+    width: 375px;
   }
 
   .sidebar-footer {
