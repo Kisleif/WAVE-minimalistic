@@ -1,9 +1,9 @@
-title: Minimalistic
+title: WAVE
 logo: /assets/img/logo.jpg
 email: person@address.com
-description: Minimalistic is a theme powered by Jekyll.
+description: WAVE Collaboration Website
 favicon: true
-color-scheme: auto
+color-scheme: dark
 
 plugins:
   - jekyll-sitemap
@@ -11,12 +11,9 @@ plugins:
   - jemoji
 
 platforms:
-  - name: GitHub
-    icon: <i class="fa-brands fa-github"></i>
+  - name: Instagram
+    icon: <i class="fa-brands fa-instagram"></i>
     link: https://github.com/vaibhavvikas
-  - name: LinkedIn
-    icon: <i class="fa-brands fa-linkedin"></i>
-    link: https://www.linkedin.com/in/vaibhavvikas
 
 navigation:
   - name: Readme
