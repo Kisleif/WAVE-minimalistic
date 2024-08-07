@@ -15,6 +15,15 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+.wrapper {
+  width: 100%; /* Use full width */
+  max-width: 100%; /* Remove max-width restrictions */
+  margin: 0 auto;
+  display: flex; /* Use flexbox to manage layout */
+  flex-direction: row; /* Arrange children horizontally */
+  align-items: flex-start; /* Align items at the start of container */
+}
+
 .header-title-mobile {
   display: none;
 }
@@ -255,7 +264,7 @@ strong {
 }
 
 section {
-  width: 550px;
+  flex-grow: 1; /* Allow section to fill remaining space */
   float: right;
   padding-bottom:30px;
 }
@@ -289,7 +298,7 @@ hr {
 
 @media print, screen and (max-width: 960px) {
   .wrapper {
-    width: 610px;
+    flex-direction: column;
   }
 
   .sidebar {
@@ -298,7 +307,7 @@ hr {
   }
 
   section {
-    width: 375px;
+    width: 100%;
   }
 
   .sidebar-footer {
