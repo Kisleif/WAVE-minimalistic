@@ -302,7 +302,7 @@ hr {
   }
 
   .sidebar {
-    width: 200px;
+    width: 100%; /* Full width for smaller screens */
     height: calc(100vh - 50px);  
   }
 
